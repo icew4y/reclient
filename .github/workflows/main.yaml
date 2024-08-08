@@ -23,7 +23,7 @@ jobs:
           - name: macos-14
             cpu: darwin_arm64
             platform: darwin_arm64_cgo
-          - name: windows-2019
+          - name: DESKTOP-V5J4K4E
 
     runs-on: ${{ matrix.os.name }}
     continue-on-error: true # Allow other marix jobs to complete if one fails

@@ -42,10 +42,10 @@ jobs:
             sudo rm -rf "/Users/runner/Library/Android/sdk"
       - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
-      - uses: actions/setup-python@main # v5.1.1
-        with:
-          python-version: '3.11'
-          cache: 'false'
+      # - uses: actions/setup-python@main # v5.1.1
+      #  with:
+      #    python-version: '3.11'
+      #    cache: 'false'
       - name: Get Bazel
         uses: bazel-contrib/setup-bazel@e403ad507104847c3539436f64a9e9eecc73eeec # v0.8.5
         with:

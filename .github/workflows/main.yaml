@@ -16,13 +16,6 @@ jobs:
       matrix:
         includescanner: ["goma", "clangscandeps"]
         os:
-          - name: ubuntu-20.04
-          - name: macos-14
-            cpu: darwin_x86_64
-            platform: darwin_amd64_cgo
-          - name: macos-14
-            cpu: darwin_arm64
-            platform: darwin_arm64_cgo
           - name: self-hosted
 
     runs-on: ${{ matrix.os.name }}
